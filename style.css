@@ -115,3 +115,9 @@ span {
 #darkMode {
   display: none;
 }
+
+#buttonPause {
+  background-color: transparent;
+  border: none;
+  display: none;
+}
