@@ -43,17 +43,20 @@ function timerControl () {
 
   function addTime() {
     let minutes = Number(minutesDisplay.textContent)
+    clearTimeout(timerTimeOut)
     minutes++
     updateDisplay(minutes, 0)
-    
+    countdown(minutesDisplay, secondsDisplay)
   }
 
   function reduceTime() {
     let minutes = Number(minutesDisplay.textContent)
+    clearTimeout(timerTimeOut)
     if(minutes > 0) {
       minutes--
     }
     updateDisplay(minutes, 0)
+    countdown(minutesDisplay, secondsDisplay)
   }
 
   return {
