@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+  <title>Focus Timer</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="/scripts/index.js" defer type="module"></script>
+</head>
+<body>
+
+  <main>
+    <section id="timerDisplay">
+
+      <div class="minutesAndSeconds">
+      <span id="minutes">02</span>
+      <span>:</span>
+      <span id="seconds">00</span>
+      </div>
+
+      <div class="buttonsTimerDisplay">
+
+        <button id="buttonPlay" class="buttondisplaytimer">
+          <img src="images/play.svg" alt="Button Play">
+        </button>
+        <button id="buttonStop" class="buttondisplaytimer">
+          <img src="images/stop.svg" alt="Button Stop">
+        </button>
+        <button id="buttonAddTime" class="buttondisplaytimer">
+          <img src="images/addtime.svg" alt="Button Add Time">
+        </button>
+        <button id="buttonReduceTime" class="buttondisplaytimer">
+          <img src="images/reducetime.svg" alt="Button Reduce Time">
+        </button>
+        
+      </div>
+
+    </section>
+
+    <section id="buttonsSoundsDisplay">
+
+      <button id="soundFlorest" class="buttonSound">
+        <img src="images/imagessound/tree.svg" alt="Button Sound Florest"> 
+        <input type="range" min="0" max="100" value="0" class="volumeControl">
+      </button>
+      <button id="soundRain" class="buttonSound">
+        <img src="images/imagessound/cloud.svg" alt="Button Sound Rain">
+        <input type="range" min="0" max="100" value="0" class="volumeControl">
+      </button>
+      <button id="soundCoffe" class="buttonSound">
+        <img src="images/imagessound/coffee.svg" alt="Button Sound Coffee Shop">
+        <input type="range" min="0" max="100" value="0" class="volumeControl">
+      </button>
+      <button id="soundfire" class="buttonSound">
+        <img src="images/imagessound/fire.svg" alt="Button Sound Fire Place">
+        <input type="range" min="0" max="100" value="0" class="volumeControl">
+      </button>
+
+    </section>
+
+  </main>
+
+  <button id="buttonMode">
+    <img src="images/modepageicons/light.svg" alt="" id="lightMode">
+    <img src="images/modepageicons/dark.svg" alt="" id="darkMode">
+  </button>
+  
+  
+</body>
+</html>
